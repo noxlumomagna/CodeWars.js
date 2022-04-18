@@ -4,6 +4,7 @@ You don't need to worry about validation, since arr1 and arr2 must be arrays wit
 
 Note: arr1 and arr2 may be sorted in different orders. Also arr1 and arr2 may have same integers. Remove duplicated in the returned result.
 
+
 function mergeArrays(arr1, arr2) {
   
 let newArr =  arr1.concat(arr2)
