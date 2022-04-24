@@ -13,3 +13,9 @@ function digitize(n) {
   return reversedArray;
 }
 console.log(digitize(348597));
+
+or
+
+function digitize(n) {
+  return String(n).split('').map(Number).reverse()
+}
