@@ -15,13 +15,13 @@ Output: "odd"
 Input: [0, -1, -5]
 Output: "even"
 
-function oddOrEven(array) {
-  if (array == 0) 
+function oddOrEven(toasters){
+  if (toasters == 0)
+    return "even"
+  let magic = toasters.reduce((a,b) => a + b)
+  if (magic % 2 == 0){
     return "even";
-   let sum = array.reduce((a, b) => a + b)
-   
-   if (sum % 2 == 0){
-   return "even";
-   } else 
-     return "odd";
+  } else {
+    return "odd";
+  }
 }
