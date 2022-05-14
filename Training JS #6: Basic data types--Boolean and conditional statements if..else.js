@@ -7,3 +7,9 @@ In the end, click "Submit" to submit your code pass this kata.
 function trueOrFalse(val){
 return Boolean(val).toString();
 }
+
+or 
+
+function trueOrFalse(val){
+  return val ? true : false;             
+}
