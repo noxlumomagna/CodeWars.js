@@ -12,12 +12,12 @@ A string consists of lowercase latin letters, digits and symbols.
 
 [output] a string
 
-function reverseLetter(str) {
+function reverseLetter(str){
   let array = [];
-    for (let i = 0; i < str.length; i++) {
-      if (97 <= str[i].charCodeAt(0) && str[i].charCodeAt(0) <= 122) {
-        array.push(str[i]);
-      }
+  for(let i=0; i<str.length; i++){
+    if(96 < str[i].charCodeAt(0) && str[i].charCodeAt(0) < 123){
+      array.push(str[i])
     }
-    return array.reverse().join('');
+  }
+  return  array.reverse().join('');
 }
