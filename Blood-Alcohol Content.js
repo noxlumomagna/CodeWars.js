@@ -22,7 +22,7 @@ Output must be returned as a number data-type, greater than or equal to 0, with 
 
 Using these parameters, create the function that will calculate Bob's and other partier's BAC.
 
-function bloodAlcoholContent({oz,abv},weight,sex,time){
-  return Number((oz * abv * 5.14 / weight * 
-            (sex === 'male' ? 0.73 : 0.66) - 0.015 * time).toFixed(4))
-  }
+function bloodAlcoholContent(drinks, weight, sex, time){
+  sex == 'male' ? r = 0.73 : r = 0.66
+  return  Number(((drinks.ounces * drinks.abv * 5.14 / weight * r) - .015 * time).toFixed(4));
+}
