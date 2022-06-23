@@ -11,12 +11,12 @@ checkExam(["a", "a", "c", "b"], ["a", "a", "b",  ""]) → 7
 checkExam(["a", "a", "b", "c"], ["a", "a", "b", "c"]) → 16
 checkExam(["b", "c", "b", "a"], ["",  "a", "a", "c"]) → 0
 
-function checkExam(test, studentAnswer){
-  let score = studentAnswer.reduce((total, answer, index)=>{
-    if(!answer) return total
-    if(answer === test[index]) return total + 4
-    if(answer !== test[index]) return total - 1
-      return total
+function checkExam(key, scanTron){
+  let examScore = scanTron.reduce((points, answer, index)=>{
+    if(!answer) return points;
+    if(answer == key[index]) return points+4
+    if(answer !== key[index]) return points-1
+      return points
   },0)
-  return score > 0 ? score : 0
+  return examScore > 0 ? examScore : 0
 }
