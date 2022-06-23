@@ -5,6 +5,5 @@ The solution would work like the following:
 getEvenNumbers([2,4,5,6]) // should == [2,4,6]
 
 function getEvenNumbers(array){
-  return array.filter(number => {if(number % 2 == 0)return number})
-  return [];
+   return array.filter(number => number % 2 == 0)
 }
