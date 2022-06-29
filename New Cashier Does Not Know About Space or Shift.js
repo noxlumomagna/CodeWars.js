@@ -49,7 +49,5 @@ getOrder=input=>{
       }
     }
   }
-
-
   return order.join(' ');
 };
