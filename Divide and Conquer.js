@@ -2,9 +2,9 @@ Given a mixed array of number and string representations of integers, add up the
 
 Return as a number.
 
-function divCon(x){
-  let strings = x.filter(n => typeof n === 'string')
-  let nums = x.filter(n => typeof n === 'number')
+function divCon(array){
+  let strings = array.filter(n => typeof n === 'string')
+  let nums = array.filter(n => typeof n === 'number')
   
   let strSum = strings.reduce((a, b) => a + +b, 0)
   let numSum = nums.reduce((a, b) => a + b, 0)
