@@ -3,11 +3,9 @@ Given a mixed array of number and string representations of integers, add up the
 Return as a number.
 
 function divCon(array){
-  let strings = array.filter(n => typeof n === 'string')
-  let nums = array.filter(n => typeof n === 'number')
+  let stringIntegers = array.filter(e => typeof e === "string")
+  let numberIntegers = array.filter(e => typeof e === "number")
   
-  let strSum = strings.reduce((a, b) => a + +b, 0)
-  let numSum = nums.reduce((a, b) => a + b, 0)
+  return numberIntegers.reduce((a,b)=>a+b,0) - stringIntegers.reduce((a,b)=>a + +b,0)
 
-  return numSum - strSum
 }
