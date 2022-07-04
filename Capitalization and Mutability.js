@@ -4,15 +4,10 @@ Unfortunately, they have now left and the code they gave you doesn't work. Fix t
 
 Don't worry about numbers, special characters, or non-string types being passed to the function. The string lengths will be from 1 character up to 10 characters, but will never be empty.
 
+capitalizeWord=word=>word[0].toUpperCase()+word.slice(1)
 
+or 
 
-function capitalizeWord(word) {
-  let sp = word.split('')
-  let start = sp[0].toUpperCase()
-
-    sp.splice(0,1)
-    sp.unshift(start)
-    return sp.join('')
-  
+function capitalizeWord(word){
+  return word[0].toUpperCase()+word.slice(1)
 }
-capitalizeWord('fizzbuzz')
