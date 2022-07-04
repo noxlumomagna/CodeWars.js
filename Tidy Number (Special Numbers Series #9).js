@@ -12,3 +12,11 @@ function tidyNumber(n){
   }
   return true
 }
+
+function tidyNumber(n){
+  let tidy = n.toString();
+  for (let i=0; i<tidy.length-1; i++){
+    if(tidy[i] > tidy[i+1]) return false;
+  }
+  return true;
+}
