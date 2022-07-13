@@ -5,6 +5,6 @@ For example, capitalize("abcdef") = ['AbCdEf', 'aBcDeF']. See test cases for mor
 The input will be a lowercase string with no spaces.
 
 function capitalize(s){
-  return   [s.split('').map((a,index)=>index%2==0 ? a.toUpperCase():a.toLowerCase()).join(''),
-            s.split('').map((a,index)=>index%2!==0? a.toUpperCase():a.toLowerCase()).join('')]
-}
+  return [s.split('').map((a,index)=>index%2==0 ? a.toUpperCase():a.toLowerCase()).join(''),
+          s.split('').map((a,index)=>index%2!==0 ? a.toUpperCase():a.toLowerCase()).join('')]
+};
