@@ -14,3 +14,8 @@ function grader(score) {
   if(score >= 0.7) return "C"
   if(score >= 0.6) return "D"
 }
+
+or
+
+grader=score=>score > 1 || score < 0.6 ? "F" : score < 0.7 ? "D" : score < 0.8 ? "C" : score < 0.9 ? "B" : "A"
+
