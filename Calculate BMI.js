@@ -15,3 +15,5 @@ function bmi(weight,height) {
   if (calc<=30) return 'Overweight'
   if (calc>30) return 'Obese'
 }
+
+bmi=(weight,height, calc = weight/height**2)=> calc <= 18.5 ? "Underweight" : calc <= 25 ? "Normal" : calc <= 30 ? "Overweight" : "Obese"
