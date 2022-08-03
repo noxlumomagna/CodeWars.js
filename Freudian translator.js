@@ -17,4 +17,6 @@ function toFreud(string) {
   return string === "" ? "" : string.split(' ').map(e=>e='sex').join(' ')
 }
 
+or
+
 toFreud=string=>string === "" ? "" : string.split(' ').map(e=>e='sex').join(' ')
