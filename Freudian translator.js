@@ -10,3 +10,11 @@ function toFreud(string) {
   if(!string) return ""
    return string.split(' ').map(e=>e='sex').join(" ")
 }
+
+or
+
+function toFreud(string) {
+  return string === "" ? "" : string.split(' ').map(e=>e='sex').join(' ')
+}
+
+toFreud=string=>string === "" ? "" : string.split(' ').map(e=>e='sex').join(' ')
