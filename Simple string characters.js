@@ -16,7 +16,6 @@ function solve(s){
   return charArray
 }
 
-
 or
 
 function solve(s){
