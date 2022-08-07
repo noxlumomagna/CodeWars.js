@@ -15,3 +15,18 @@ function solve(s){
   }
   return charArray
 }
+
+
+or
+
+function solve(s){
+  let charArray = [0, 0, 0, 0];
+  for (let i=0;i< s.length;i++){
+    if (s.charCodeAt(i) >= 65 && s.charCodeAt(i) <= 90) charArray[0]++;
+    if (s.charCodeAt(i) >= 97 && s.charCodeAt(i) <= 122) charArray[1]++;
+    if (s.charCodeAt(i) >= 48 && s.charCodeAt(i) <= 57) charArray[2]++;
+    if (s.charCodeAt(i) >= 33 && s.charCodeAt(i) <= 47) charArray[3]++;
+    if (s.charCodeAt(i) >= 58 && s.charCodeAt(i) <= 64) charArray[3]++;
+  }
+  return charArray;
+}
