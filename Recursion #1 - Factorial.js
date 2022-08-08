@@ -9,10 +9,12 @@ The value of 0! is 1.
 You have to create the function factorial that receives n and returns n!. You have to use recursion.
 
 function factorial(n){
-    let recursion = 1;
-    while (n > 1) {
-        recursion = recursion * n;
-        n = n - 1;
-    }
-    return recursion;
+  if (n === 0) {
+    return 1;
+  }
+  return n * factorial(n - 1);
 }
+
+or
+
+factorial=n=>n ===0 ? 1 : n * factorial(n-1)
