@@ -8,7 +8,8 @@ if n is 0, return an empty array
 if n is anything other than an integer or integer-formatted string (e.g. '123') that is >=0, throw a TypeError
 When throwing a TypeError, the message should be n is invalid, where you replace n for the actual value passed to the function.
 
-function prefill(array,value){
-  if(parseInt(array) !== Math.abs(array)) throw new TypeError(`${array} is invalid`);
-  return array ? Array(array).fill(value) : [];
+function prefill(n, v) {
+  if(parseInt(n) !== Math.abs(n)) throw new TypeError(`${n} is invalid`);
+  if(n ==='0') return []
+  return n ? Array(n).fill(v) : [];
 }
