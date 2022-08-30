@@ -3,3 +3,7 @@ Reverse every other word in a given string, then return the string. Throw away a
 function reverse(str){
   return str.split(' ').map((e,i)=>i%2!==0 ? e.split('').reverse().join(''): e).join(' ').trim()
 }
+
+or
+
+reverse=str=>str.split(' ').map((e,i)=>i%2!==0 ? e.split('').reverse().join(''):e).join(' ').trim()
