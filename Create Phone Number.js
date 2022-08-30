@@ -5,6 +5,8 @@ function createPhoneNumber(numbers){
   return `(${phone.substring(0,3)}) ${phone.substring(3,6)}-${phone.substring(6)}`
 }
 
+or
+
 function createPhoneNumber(numbers){
   let format = "(xxx) xxx-xxxx";
   for(let i = 0; i < numbers.length; i++){
