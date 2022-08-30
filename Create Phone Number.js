@@ -4,3 +4,11 @@ function createPhoneNumber(numbers){
   let phone = numbers.join('')
   return `(${phone.substring(0,3)}) ${phone.substring(3,6)}-${phone.substring(6)}`
 }
+
+function createPhoneNumber(numbers){
+  let format = "(xxx) xxx-xxxx";
+  for(let i = 0; i < numbers.length; i++){
+    format = format.replace('x', numbers[i]);
+  }
+  return format;
+}
