@@ -13,3 +13,7 @@ Return true if the number of days passed from last to today is greater than cycl
 function periodIsLate(last, today, cycleLength){
   return Math.floor(today.getTime() - last.getTime()) / 86400000 > cycleLength
 }
+
+or
+
+periodIsLate=(last, today, cycleLength)=>(today-last)/86400000>cycleLength
