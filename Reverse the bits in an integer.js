@@ -8,3 +8,7 @@ function reverseBits (n) {
   let binary = n.toString(2).split('').reverse().join('')
   return parseInt(binary,2)
 }
+
+or
+
+reverseBits=n=>parseInt(n.toString(2).split('').reverse().join(''), 2)
