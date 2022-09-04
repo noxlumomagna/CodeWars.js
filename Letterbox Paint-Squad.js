@@ -12,3 +12,13 @@ for(let n of(i+'')){
   }
   return boxes
 }
+
+or
+
+function paintLetterboxes(start,end){
+  let letterboxes = new Array(10).fill(0)
+  for(let i=start;i<=end;i++){
+    i.toString().split('').forEach(e=>letterboxes[e]++)
+  }
+  return letterboxes
+}
