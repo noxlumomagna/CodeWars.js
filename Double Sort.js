@@ -9,3 +9,9 @@ function dbSort(a){
   let numberSort = a.filter(e=>typeof e =='number').sort((a,b)=>a-b)
   return numberSort.concat(wordSort)
 }
+
+or
+
+function dbSort(a){
+  return a.filter(e=>typeof e == 'number').sort((a,b)=>a-b).concat(a.filter(e=>typeof e == 'string').sort())
+}
