@@ -12,3 +12,7 @@ function makeString(s){
 or
 
 makeString=s=>s.split(' ').map(e=>e.slice(0,1)).join('')
+
+or 
+
+makeString=s=>s.split(' ').map(e=>e[0]).join('')
