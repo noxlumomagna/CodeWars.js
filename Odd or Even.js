@@ -25,3 +25,7 @@ function oddOrEven(toasters){
     return "odd";
   }
 }
+
+or 
+
+oddOrEven=array=>array.reduce((a,b)=>a+b,0) % 2 == 0 ? 
