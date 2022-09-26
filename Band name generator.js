@@ -12,3 +12,8 @@ function bandNameGenerator(str) {
 return (str.slice(0,1)!=str.slice(-1)) ? 
   'The ' + str.charAt(0).toUpperCase() + str.slice(1) : str.charAt(0).toUpperCase()+str.slice(1)+str.slice(1)
 }
+
+or
+
+bandNameGenerator = s => s[0] != s[s.length-1] ? "The " + s[0].toUpperCase() + s.slice(1) :
+       s[0].toUpperCase() + s.slice(1) + s.slice(1);
