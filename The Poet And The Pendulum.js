@@ -6,8 +6,8 @@ The Higher than smallest , goes to the right .
 The Next higher number goes to the left of minimum number and So on , in a to-and-fro manner similar to that of a Pendulum.
 
 function pendulum(values) {
-  let leftPointer = []
-  let rightPointer = []
-  let sorted = values.sort((a,b)=>a-b).map((e,i)=>(i%2===0? leftPointer : rightPointer).push(e))
-  return leftPointer.reverse().concat(rightPointer)
+    let beginning = []
+    let end = []
+    values = values.sort((a,b)=>a-b).map((e,i)=>(i%2 === 0 ? beginning : end).push(e))
+  return beginning.reverse().concat(end)
 }
