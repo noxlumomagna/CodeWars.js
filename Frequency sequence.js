@@ -5,3 +5,9 @@ function freqSeq(str, sep) {
   str.split('').map(e=>object[e] = object[e]? object[e]+1:1)
   return str.split('').map(e=>object[e]).join(sep)
 }
+
+or
+
+function freqSeq(str, sep) {
+  return str.split('').map((e,i,arr)=>arr.filter(i=>i===e).length).join(sep)
+}
