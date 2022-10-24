@@ -9,3 +9,9 @@ function solve(s){
     
     return upperCaseCount > lowerCaseCount ? s.toUpperCase() : s.toLowerCase()
 }
+
+or
+
+function solve(s){
+    return s.split('').filter(e=>e === e.toUpperCase()).length > s.length / 2 ? s.toUpperCase() : s.toLowerCase()
+}
