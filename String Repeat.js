@@ -6,3 +6,7 @@ repeatStr(5, "Hello") // "HelloHelloHelloHelloHello"
 function repeatStr (n,s){
 return s.repeat(n);
 }
+
+or
+
+repeatStr=(n,s)=>s.repeat(n)
