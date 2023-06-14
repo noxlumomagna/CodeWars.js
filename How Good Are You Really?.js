@@ -12,3 +12,7 @@ function betterThanAverage(classPoints, yourPoints) {
   let a = classPoints.reduce((a,b) => a+b)/classPoints.length
   return (yourPoints > a) ? true : false
 }
+
+or
+
+betterThanAverage=(classPoints,yourPoints)=>yourPoints>classPoints.reduce((a,b)=>a+b,0)/classPoints.length
