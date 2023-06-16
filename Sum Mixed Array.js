@@ -5,3 +5,9 @@ Return your answer as a number.
 function sumMix(x){
 return Number(x.reduce((a,b) => Number(a)+Number(b)));
 }
+
+or
+
+function sumMix(x){
+  return x.map(Number).reduce((a,b)=>a+b,0)
+}
