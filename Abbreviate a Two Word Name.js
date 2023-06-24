@@ -12,3 +12,9 @@ function abbrevName(name){
   let firstAndLast = name.toUpperCase().split(' ')
   return firstAndLast[0].slice(0,1) + '.' + firstAndLast[1].slice(0,1)
 }
+
+or
+
+function abbrevName(name){
+  return name.split(' ').map(e=>e[0].toUpperCase()).join('.')
+}
